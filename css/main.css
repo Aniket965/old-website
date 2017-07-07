@@ -1,13 +1,15 @@
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Candal|Carter+One|Cinzel+Decorative|Holtwood+One+SC|Limelight|Montserrat+Subrayada|Shojumaru');
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
 h1{
      /*background: pink;*/
      font-family: 'Montserrat Subrayada', sans-serif;
-     font-size: 12vw;
+     font-size: 14vw;
      text-align: center;
      color: #000;   
 }
 .handle{
-    text-align: center
-
+    text-align: center;
+    font-size:4vw;
+    color: #808182;
+    font-family: 'Oleo Script', cursive;
 }
