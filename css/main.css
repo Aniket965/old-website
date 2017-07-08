@@ -46,3 +46,43 @@ h5:hover{
 .active{
     color: #000;
 }
+
+
+.fa {
+
+    font-size: 4rem;
+    width: 4rem;
+    height: 4rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+
+
+
+/* Set a specific color for each brand */
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+.fa-github{
+    color: #000;
+}
+.fa-medium{
+    color: #02b875;
+    background: white;
+}
+.fa-linkedin{
+    color: #0077B5;
+    background: #fff;
+}
+
+.fa{
+    cursor: pointer;
+}
+
+.space{
+    margin-top: 2rem;
+}
