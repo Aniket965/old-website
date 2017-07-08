@@ -78,11 +78,29 @@ h5:hover{
     color: #0077B5;
     background: #fff;
 }
-
 .fa{
     cursor: pointer;
 }
 
 .space{
     margin-top: 2rem;
+}
+a {
+    
+    color: #888;
+}
+a:hover{
+
+    text-decoration: none;
+    color: #000;
+     
+}
+    
+a:visited {  
+    text-decoration: none;
+   color: inherit;
+ } 
+a:active{
+    text-decoration: none;
+    color: #000;
 }
