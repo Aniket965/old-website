@@ -1,7 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');
 @import url('https://fonts.googleapis.com/css?family=Oleo+Script');
+html, body, .container {
+    height: 100%;
+}
+.container {
+    display: table;
+    vertical-align: middle;
+}
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+
 h1{
      /*background: pink;*/
+     margin-top: -10vw;
      font-family: 'Montserrat Subrayada', sans-serif;
      font-size: 14vw;
      text-align: center;
@@ -9,7 +22,23 @@ h1{
 }
 .handle{
     text-align: center;
-    font-size:4vw;
-    color: #808182;
+    font-size:3rem;
+    color: #555;
     font-family: 'Oleo Script', cursive;
+}
+.navigater{
+    text-align: center;
+    /*background: pink;*/
+     font-family: 'Oleo Script', cursive;
+    
+}
+h5{
+    font-size:2rem;
+}
+.inactive{
+     color: #888;
+}
+
+.active{
+    color: #000;
 }
