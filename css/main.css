@@ -35,6 +35,10 @@ h1{
 h5{
     font-size:2rem;
 }
+h5:hover{
+    color: #000!important;
+    cursor: pointer;
+}
 .inactive{
      color: #888;
 }
