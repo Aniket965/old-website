@@ -78,6 +78,15 @@ h5:hover{
     color: #0077B5;
     background: #fff;
 }
+.fa-android {
+  color:   #74C043;
+}
+.fa-globe{
+    color:#53B1E6;
+}
+.fa-cogs{
+    color:#669F5B;
+}
 .fa{
     cursor: pointer;
 }
