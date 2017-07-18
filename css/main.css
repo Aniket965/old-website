@@ -87,6 +87,18 @@ h5:hover{
 .fa-cogs{
     color:#669F5B;
 }
+.fa-codepen{
+    color: #000;
+}
+.fa-google-plus{
+    color: #d34836;
+}
+.fa-facebook{
+    color: 	#3b5998;
+}
+.fa-envelope{
+    color: #ea4335;
+}
 .fa{
     cursor: pointer;
 }

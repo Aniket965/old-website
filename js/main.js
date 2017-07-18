@@ -1,5 +1,6 @@
 $(document).ready(function () {
     $('.projects').hide(0);
+    $('.contacts').hide(0);
     initializeSocialLinks();
 
     $('.navigater').click(function () {
@@ -11,18 +12,26 @@ $(document).ready(function () {
         $('#' + clicked_id).children().addClass('active');
 
 
-        // display social links only on home selected
+
         if (clicked_id === "home") {
+            $('.contacts').hide(300);
             $('.social').show(300);
-             $('.projects').hide(300);
+            $('.projects').hide(300);
         }
         else if (clicked_id === "projects") {
+            $('.contacts').hide(300);
             $('.social').hide(300);
             $('.projects').show(300);
+        }
+        else if (clicked_id === "contacts") {
+            $('.social').hide(300);
+            $('.projects').hide(300);
+            $('.contacts').show(300);
         }
         else {
             $('.social').hide(300);
             $('.projects').hide(300);
+            $('.contacts').hide(300);
         }
 
 
