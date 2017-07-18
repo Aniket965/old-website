@@ -67,6 +67,11 @@ function initializeSocialLinks() {
         window.open("https://plus.google.com/+AniketSharma965", "Google Plus");
     });
 
+     $('.fa-codepen').click(function () {
+        window.open("https://codepen.io/aniket965", "Codepen");
+    });
+
+
 
 
 }
