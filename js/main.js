@@ -60,5 +60,14 @@ function initializeSocialLinks() {
         window.open("https://github.com/aniket965", "github");
     });
 
+    $('.fa-envelope').click(function () {
+        location.href = "mailto:aniket965.as@gmail.com";
+    });
+    $('.fa-google-plus').click(function () {
+        window.open("https://plus.google.com/+AniketSharma965", "Google Plus");
+    });
+
+
+
 }
 
