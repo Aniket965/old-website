@@ -1,26 +1,32 @@
-$(document).ready(function() {
+$(document).ready(function () {
+    $('.projects').hide(0);
+    initializeSocialLinks();
 
-        initializeSocialLinks();
-        
-    $('.navigater').click(function() {
-        var clicked_id =  $(this).attr('id');
+    $('.navigater').click(function () {
+        var clicked_id = $(this).attr('id');
 
         $('.navigater').children().addClass('inactive');
         $('.navigater').children().removeClass('active');
-        $('#'+clicked_id).children().removeClass('inactive');
-        $('#'+clicked_id).children().addClass('active');
-       
-       
+        $('#' + clicked_id).children().removeClass('inactive');
+        $('#' + clicked_id).children().addClass('active');
+
+
         // display social links only on home selected
-        if(clicked_id !=="home"){
-         $('.social').hide(300);
-        }
-        else{
+        if (clicked_id === "home") {
             $('.social').show(300);
+             $('.projects').hide(300);
+        }
+        else if (clicked_id === "projects") {
+            $('.social').hide(300);
+            $('.projects').show(300);
+        }
+        else {
+            $('.social').hide(300);
+            $('.projects').hide(300);
         }
 
 
-});
+    });
 
 })
 
