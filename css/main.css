@@ -26,6 +26,11 @@ h1{
     color: #555;
     font-family: 'Oleo Script', cursive;
 }
+.about {
+    font-size:3rem;
+    color: #555;
+    font-family: 'Oleo Script', cursive;
+}
 .navigater{
     text-align: center;
     /*background: pink;*/
@@ -118,8 +123,9 @@ a:hover{
 }
     
 a:visited {  
-    text-decoration: none;
-   color: inherit;
+
+   text-decoration: none;
+   color: red;
  } 
 a:active{
     text-decoration: none;
