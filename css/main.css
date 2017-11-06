@@ -131,3 +131,16 @@ a:active{
     text-decoration: none;
     color: #000;
 }
+
+#android-project {
+    left: -60vw;
+    top: -70vw;
+    border-radius: 50%;
+    background: red;
+    width: 150vw;
+    height: 150vw;
+    position: absolute;
+    opacity: 0.80;
+    -webkit-user-select: none;
+    user-select: none;
+}  

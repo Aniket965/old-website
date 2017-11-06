@@ -1,8 +1,14 @@
+//TODO: Attach Projects
+//TODO: Add resume
 $(document).ready(function () {
     $('.projects').hide(0);
     $('.contacts').hide(0);
     $('.about-section').hide(0);
     initializeSocialLinks();
+    // Reveal Animations For Projects
+    $('#android-project').click(()=>{
+        RevealAnimation();
+    })
 
     $('.navigater').click(function () {
         var clicked_id = $(this).attr('id');
@@ -52,7 +58,41 @@ $(document).ready(function () {
     });
 
 })
+function RevealAnimation() {
+    var andoridDiv = document.getElementById('android-project');
+    // andoridDiv.className = 'circleEffect';
+    // var bounds = andoridDiv.getBoundingClientRect();
+    // andoridDiv.style.left = bounds.left + bounds.width / 2 + 'px';
+    // andoridDiv.style.top = bounds.top + bounds.height / 2 + 'px';
 
+    // var AndroidColor = 'hsl(74°, 46%, 42%)';
+    // andoridDiv.style.background = AndroidColor;
+    // var scaleSteps = [{transform: 'scale(0)'}, {transform: 'scale(1)'}];
+    // var timing = {duration: 2500, easing: 'ease-in-out'};
+    // var anim = andoridDiv.animate(scaleSteps, timing);
+    // anim.addEventListener('finish', function() {
+    //     header.style.backgroundColor = newColor;
+    //     header.removeChild(effectNode);
+    //   });
+    // let anim = andoridDiv.animate({
+    //     opacity: [0.5, 1],
+    //     transform: ['scale(0.5)', 'scale(1)'],
+    // }, {
+    //     direction: 'alternate',
+    //     duration: 500,
+    //     iterations: Infinity,
+    // });
+    var hue = Math.random() * 360;
+    andoridDiv.style.backgroundColor = 'hsl(' + hue + ', 85%, 67%)';
+    let scaleAnim =andoridDiv.animate([
+        {transform: 'scale(0)'},
+        {transform: 'scale(1)'},
+      ], {
+        duration: 450,
+        easing: 'cubic-bezier(.22,.67,.52,.92)',
+        fill: 'forwards',
+      });
+}
 
 function initializeSocialLinks() {
     $('.fa-facebook').click(function () {
@@ -85,8 +125,4 @@ function initializeSocialLinks() {
         window.open("https://codepen.io/aniket965", "Codepen");
     });
 
-
-
-
 }
-
