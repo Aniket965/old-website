@@ -133,14 +133,42 @@ a:active{
 }
 
 #android-project {
-    left: -60vw;
-    top: -70vw;
     border-radius: 50%;
-    background: red;
-    width: 150vw;
-    height: 150vw;
+    width: 50px;
+    height: 50px;
     position: absolute;
-    opacity: 0.80;
+    opacity: 1;
+    z-index: 2;
+    -webkit-user-select: none;
+    user-select: none;
+}
+#web-project {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
     -webkit-user-select: none;
     user-select: none;
 }  
+#backend-project {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    -webkit-user-select: none;
+    user-select: none;
+}  
+#vr-project {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 1;
+    z-index: 2;
+    -webkit-user-select: none;
+    user-select: none;
+}    

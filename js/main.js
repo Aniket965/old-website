@@ -1,5 +1,10 @@
 //TODO: Attach Projects
 //TODO: Add resume
+const ANDROID_COLOR_HEX = '#74C043',
+    WEB_COLOR_HEX = '#53B1E6',
+    BACKEND_COLOR_HEX = '#669F5B',
+    VR_COLOR_HEX = '#d89952'
+
 $(document).ready(function () {
     $('.projects').hide(0);
     $('.contacts').hide(0);
@@ -7,8 +12,23 @@ $(document).ready(function () {
     initializeSocialLinks();
     // Reveal Animations For Projects
     $('#android-project').click(()=>{
-        RevealAnimation();
+        var androidDiv = document.getElementById('android-project');
+        RevealAnimation(androidDiv,ANDROID_COLOR_HEX);
     })
+    $('#web-project').click(()=>{
+        var webDiv = document.getElementById('web-project');
+        RevealAnimation(webDiv,WEB_COLOR_HEX)
+    })
+    $('#backend-project').click(()=>{
+        var webDiv = document.getElementById('backend-project');
+        RevealAnimation(webDiv,BACKEND_COLOR_HEX)
+    })
+    $('#vr-project').click(()=>{
+        var webDiv = document.getElementById('vr-project');
+        RevealAnimation(webDiv,VR_COLOR_HEX)
+    })
+    
+
 
     $('.navigater').click(function () {
         var clicked_id = $(this).attr('id');
@@ -58,35 +78,11 @@ $(document).ready(function () {
     });
 
 })
-function RevealAnimation() {
-    var andoridDiv = document.getElementById('android-project');
-    // andoridDiv.className = 'circleEffect';
-    // var bounds = andoridDiv.getBoundingClientRect();
-    // andoridDiv.style.left = bounds.left + bounds.width / 2 + 'px';
-    // andoridDiv.style.top = bounds.top + bounds.height / 2 + 'px';
-
-    // var AndroidColor = 'hsl(74°, 46%, 42%)';
-    // andoridDiv.style.background = AndroidColor;
-    // var scaleSteps = [{transform: 'scale(0)'}, {transform: 'scale(1)'}];
-    // var timing = {duration: 2500, easing: 'ease-in-out'};
-    // var anim = andoridDiv.animate(scaleSteps, timing);
-    // anim.addEventListener('finish', function() {
-    //     header.style.backgroundColor = newColor;
-    //     header.removeChild(effectNode);
-    //   });
-    // let anim = andoridDiv.animate({
-    //     opacity: [0.5, 1],
-    //     transform: ['scale(0.5)', 'scale(1)'],
-    // }, {
-    //     direction: 'alternate',
-    //     duration: 500,
-    //     iterations: Infinity,
-    // });
-    var hue = Math.random() * 360;
-    andoridDiv.style.backgroundColor = 'hsl(' + hue + ', 85%, 67%)';
-    let scaleAnim =andoridDiv.animate([
+function RevealAnimation(ele,hex) {
+    ele.style.backgroundColor = hex;
+    let scaleAnim =ele.animate([
         {transform: 'scale(0)'},
-        {transform: 'scale(1)'},
+        {transform: 'scale(50)'},
       ], {
         duration: 450,
         easing: 'cubic-bezier(.22,.67,.52,.92)',
