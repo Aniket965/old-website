@@ -1,174 +1,106 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');
-@import url('https://fonts.googleapis.com/css?family=Oleo+Script');
-html, body, .container {
-    height: 100%;
-}
-.container {
-    display: table;
-    vertical-align: middle;
-}
-.vertical-center-row {
-    display: table-cell;
-    vertical-align: middle;
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+body, html {
+    margin: 0;
+    padding: 0;
+    background: #1C1C1C;
 }
 
-h1{
-     /*background: pink;*/
-     margin-top: -1rem;
-     font-family: 'Montserrat Subrayada', sans-serif;
-     font-size: 14vw;
-     text-align: center;
-     color: #000;   
-}
-.handle{
+h1 {
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 14vw;
     text-align: center;
-    font-size:3rem;
-    color: #555;
-    font-family: 'Oleo Script', cursive;
+    font-weight: 300;
+    margin: 0;
+    background: linear-gradient(45deg, #f97794, #41c1fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    ;
+    background-size: 400% 400%;
+    -webkit-animation: brandingAnim 2s ease-out infinite;
+    animation: brandingAnim 2s ease-out infinite;
+    margin-top: 5vh;
 }
-.about {
-    font-size:3rem;
-    color: #555;
-    font-family: 'Oleo Script', cursive;
-}
-.navigater{
+
+.handle {
     text-align: center;
-    /*background: pink;*/
-     font-family: 'Oleo Script', cursive;
-    
-}
-h5{
-    font-size:2rem;
-}
-h5:hover{
-    color: #000!important;
+    font-size: 2rem;
+    color: #ffbe00;
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
     cursor: pointer;
 }
-.inactive{
-     color: #888;
-}
 
-.active{
-    color: #000;
-}
 
+.links {
+    /* background: pink; */
+    position: absolute;
+    width: 100vw;
+    min-height: 2.5rem;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
 
 .fa {
-
-    font-size: 4rem;
-    width: 4rem;
-    height: 4rem;
+    font-size: 2.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
     text-align: center;
     text-decoration: none;
-    border-radius: 50%;
+    background: linear-gradient(45deg, #f97794, #41c1fe);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    -webkit-animation: brandingAnim 2s ease-out infinite;
+    animation: brandingAnim 2s ease-out infinite;
+    margin: 0.8rem;
+}
+
+.about {
+    /* background: pink; */
+    margin-left: 8vw;
+    margin-right:8vw;
+    font-family: 'Raleway', sans-serif;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    text-align: center;
 }
 
 
 
-
-/* Set a specific color for each brand */
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-.fa-github{
-    color: #000;
-}
-.fa-medium{
-    color: #02b875;
-    background: white;
-}
-.fa-linkedin{
-    color: #0077B5;
-    background: #fff;
-}
-.fa-android {
-  color:   #74C043;
-}
-.fa-globe{
-    color:#53B1E6;
-}
-.fa-cogs{
-    color:#669F5B;
-}
-.fa-codepen{
-    color: #000;
-}
-.fa-google-plus{
-    color: #d34836;
-}
-.fa-facebook{
-    color: 	#3b5998;
-}
-.fa-envelope{
-    color: #ea4335;
-}
-.fa{
-    cursor: pointer;
+@-webkit-keyframes brandingAnim {
+    0% {
+        background-position: 0% 33%
+    }
+    50% {
+        background-position: 100% 68%
+    }
+    100% {
+        background-position: 0% 33%
+    }
 }
 
-.space{
-    margin-top: 2rem;
-}
-a {
-    
-    color: #888;
-}
-a:hover{
-
-    text-decoration: none;
-    color: #000;
-     
-}
-    
-a:visited {  
-
-   text-decoration: none;
-   color: red;
- } 
-a:active{
-    text-decoration: none;
-    color: #000;
+@-moz-keyframes brandingAnim {
+    0% {
+        background-position: 0% 33%
+    }
+    50% {
+        background-position: 100% 68%
+    }
+    100% {
+        background-position: 0% 33%
+    }
 }
 
-#android-project {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    opacity: 1;
-    z-index: 2;
-    -webkit-user-select: none;
-    user-select: none;
+@keyframes brandingAnim {
+    0% {
+        background-position: 0% 33%
+    }
+    50% {
+        background-position: 100% 68%
+    }
+    100% {
+        background-position: 0% 33%
+    }
 }
-#web-project {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    opacity: 1;
-    z-index: 2;
-    -webkit-user-select: none;
-    user-select: none;
-}  
-#backend-project {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    opacity: 1;
-    z-index: 2;
-    -webkit-user-select: none;
-    user-select: none;
-}  
-#vr-project {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    opacity: 1;
-    z-index: 2;
-    -webkit-user-select: none;
-    user-select: none;
-}    
