@@ -5,14 +5,13 @@ body{
     padding: 0;
     background: #1C1C1C;
 }
-.mainTitle {
-    font-size: 14vw;
-}
+
 h1 {
-    font-family: 'Montserrat Subrayada', sans-serif;
+ 
     text-align: center;
     font-weight: 300;
     margin: 0;
+    font-family: 'Raleway', sans-serif;
     background: linear-gradient(45deg, #f97794, #41c1fe);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -22,7 +21,10 @@ h1 {
     animation: brandingAnim 2s ease-out infinite;
     margin-top: 5vh;
 }
-
+.mainTitle {
+    font-size: 14vw;
+    font-family: 'Montserrat Subrayada', sans-serif;
+}
 .handle {
     text-align: center;
     font-size: 2rem;
