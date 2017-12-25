@@ -4,9 +4,8 @@ $(document).ready(function () {
     $('.contacts').hide(0);
     $('.about-section').hide(0);
     initializeSocialLinks();
+
 })
-
-
 
 function initializeSocialLinks() {
     $('.fa-facebook').click(function () {

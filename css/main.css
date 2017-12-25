@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat+Subrayada');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-body, html {
+body{
     margin: 0;
     padding: 0;
     background: #1C1C1C;
 }
-
+.mainTitle {
+    font-size: 14vw;
+}
 h1 {
     font-family: 'Montserrat Subrayada', sans-serif;
-    font-size: 14vw;
     text-align: center;
     font-weight: 300;
     margin: 0;
@@ -34,11 +35,10 @@ h1 {
 
 .links {
     /* background: pink; */
-    position: absolute;
+    position: fixed;
     width: 100vw;
     min-height: 2.5rem;
     text-align: center;
-    position: absolute;
     bottom: 0;
 }
 
