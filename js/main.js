@@ -9,7 +9,7 @@ $(document).ready(function () {
 
 function initializeSocialLinks() {
     $('.fa-facebook').click(function () {
-        window.open("https://www.facebook.com/aniket.sharma.583671", "facebook");
+        window.open("https://www.facebook.com/aniket965.as", "facebook");
     });
     $('.fa-twitter').click(function () {
         window.open("https://twitter.com/aniket965as", "twitter");
